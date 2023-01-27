@@ -1,0 +1,68 @@
+@use '../sass-utils/' as v;
+
+.login-main-container {
+  display: flex;
+}
+
+.section-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40%;
+
+  &__login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    min-width: 360px;
+    max-width: 100%;
+    height: 100%;
+
+    margin: 0 auto;
+    padding: 3rem 1rem;
+
+    &__image-logo {
+      margin-bottom: 60px;
+      margin-top: auto;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      width: 100%;
+
+      &__inputs-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &__forgot-password {
+          color: v.$color-gray;
+
+          font-size: 0.75rem;
+
+          text-align: right;
+
+          &:hover {
+            color: v.$color-blue;
+          }
+        }
+      }
+
+      // .button{
+      //   margin-bottom: 90px;
+      // }
+    }
+
+    &__register-link {
+      margin-top: auto;
+    }
+  }
+}
