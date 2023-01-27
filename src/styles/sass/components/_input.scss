@@ -1,0 +1,41 @@
+@use '../sass-utils' as v;
+
+.input-container{
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+  input{
+    width: 100%;
+    
+    padding: 1rem;
+    
+    color: v.$color-gray;
+    
+    border: 1px solid v.$color-gray;
+    border-radius: 1rem;
+    
+    font-size: 1rem;
+
+    outline: none;
+      &::placeholder{
+        color: v.$color-gray;
+      }
+
+      &:focus{
+        border-color: v.$color-blue;
+     }
+  }
+
+  &__icon-container{
+    position: absolute;
+
+    top: 50%;
+    right: 1rem;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+  }
+}
