@@ -1,0 +1,22 @@
+.section-banner {
+  position: relative;
+
+  width: 60%;
+  height: 100vh;
+
+  background: linear-gradient(167.64deg, #EB8528 2.59%, #F4AB68 99.34%);
+
+  overflow: hidden;
+
+  &__image-banner {
+    position: absolute;
+    bottom: -5px;
+    right: 0px;
+
+    width: 735px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+}

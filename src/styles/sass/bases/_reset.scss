@@ -1,0 +1,24 @@
+@use '../sass-utils' as v;
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+a{
+  color: v.$color-blue;
+
+  text-decoration: none;
+}
+
+button{
+  background: none;
+  border: none;
+}
