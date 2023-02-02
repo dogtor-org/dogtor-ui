@@ -1,10 +1,12 @@
 interface IButton {
-  children: string
+  children: string;
+  isSecundary?: boolean;
+  onClick?(): void 
 }
 
-export function Button({children}:IButton){
+export function Button({children, isSecundary, onClick}:IButton){
   return(
-    <button className='button'>
+    <button className={`button ${isSecundary ? 'secundary' : null}`} onClick={onClick}>
       {children}
     </button>
   )
