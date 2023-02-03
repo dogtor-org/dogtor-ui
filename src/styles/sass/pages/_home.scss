@@ -40,4 +40,16 @@
     }
   }
 
+  &__section-treatment{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    margin-top: 2.25rem;
+
+    &__card-treatment{
+      display: flex;
+      gap: 1.5rem;
+    }
+  }
 }

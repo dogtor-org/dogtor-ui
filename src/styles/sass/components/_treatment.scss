@@ -1,0 +1,34 @@
+@use '../sass-utils/' as v;
+
+.treatment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+
+  &__icon-treatment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0.75rem;
+
+    background-color: #3D9CF3;
+    border-radius: 1rem;
+  }
+
+  span {
+    color: v.$color-gray;
+  }
+
+  &:hover {
+    span {
+      color: v.$color-blue;
+    }
+  }
+}
