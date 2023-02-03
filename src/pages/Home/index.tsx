@@ -1,5 +1,6 @@
 import dogLeft from '../../assets/imgs/dog-welcome-home.png'
 import dogOwner from '../../assets/imgs/dog&owner-welcome-home.png'
+import { Treatment } from '../../components/Treatment'
 export function Home() {
   return (
     <>
@@ -16,6 +17,15 @@ export function Home() {
           </div>
         </section>
 
+        <section className='home__section-treatment'>
+          <h2>Atendimentos</h2>
+          <div className="home__section-treatment__card-treatment">
+            <Treatment />
+            <Treatment />
+            <Treatment />
+            <Treatment />
+          </div>
+        </section>
       </main>
     </>
   )
