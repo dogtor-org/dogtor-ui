@@ -1,0 +1,78 @@
+@use '../sass-utils/' as v;
+
+.dog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  position: relative;
+
+  width: 272px;
+  height: 337px;
+
+  padding: 2rem;
+
+  background: linear-gradient(180deg, #F47800 -11.18%, rgba(237, 149, 64, 0.99) 109.02%);
+
+  border-radius: 1.5rem;
+
+  overflow: hidden;
+
+  &__info-top {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    &__text-info {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      h4 {
+        color: v.$color-white;
+      }
+
+      span {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+
+    &__calendar-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 0.25rem;
+
+      border: solid 1px v.$color-white;
+      border-radius: 100%;
+    }
+  }
+
+
+  &__year-icon-container {
+    width: 100%;
+    float: left;
+
+    &__year {
+      padding: 0 1rem;
+
+      border: solid 1px v.$color-white;
+      border-radius: 1rem;
+
+      color: v.$color-white;
+    }
+  }
+
+  &__image-dog {
+    position: absolute;
+    bottom: -16px;
+    right: -16px;
+  }
+
+  &:hove{
+    // TODO realizar animações de hover
+  }
+}
